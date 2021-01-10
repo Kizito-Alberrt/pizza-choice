@@ -604,3 +604,36 @@
       padding: 1rem 3rem;
     }
   }
+.container2{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+.container2 .image9:hover{
+  transform: scale(0.9);
+  background-color: #0300072f;
+  transition: all 300ms ease-in-out;
+}
+.add-cart{
+  position: absolute;
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  text-align: center;
+}
+.image9:hover .cart1
+.image9:hover .cart2
+.image9:hover .cart3
+.image9:hover .cart4
+.image9:hover .cart5
+.image9:hover .cart6
+.image9:hover .cart7
+.image9:hover .cart8{
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+}
