@@ -94,3 +94,16 @@ function removeItem(removeButton)
     recalculateCart();
   });
 }
+
+
+function ani () {
+  document.getElementById('anonymous').style.display = 'block';
+  alert('thank you ')
+}
+$ ('.btn').click(function(){
+  alert('your total cost is Ksh ')
+})
+function region(){
+  document.getElementById('region').style.display = 'block';
+  alert('kindly choose your location')
+}
