@@ -1,305 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pizza choice</title>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Choice </title>
+  <script src="./scripts.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
-    <nav class="nav">
-        <div class="navigation container">
-          <div class="logo">
-            <h1>Pizza Choice</h1>
-          </div>
-  
-          <div class="menu">
-            <div class="top-nav">
-              <div class="logo">
-                <h1>Pizza Choice</h1>
-              </div>
-              <div class="close">
-                <i class="bx bx-x"></i>
-              </div>
-            </div>
-  
-            <ul class="nav-list">
-              <li class="nav-item">
-                <a href="#home" class="nav-link scroll-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="product.html" class="nav-link">Products</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link scroll-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link scroll-link">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a href="#account" class="nav-link scroll-link">Account</a>
-              </li>
-              <li class="nav-item">
-                <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
-              </li>
-            </ul>
-          </div>
-  
-          <a href="cart.html" class="cart-icon">
-            <i class="bx bx-shopping-bag"></i>
-          </a>
-  
-          <div class="hamburger">
-            <i class="bx bx-menu"></i>
-          </div>
-        </div>
-      </nav>
-      <img src="img 1.jpg" width="1500" height="1000" alt="" class="img 1.jpg" />
-
-    <div class="hero-content">
-      <h2><span class="discount">70% </span> SALE OFF</h2>
-      <h1>
-        <span>January times</span>
-        <span>mode on</span>
-      </h1>
-
-      <a class="btn" href="#">shop now</a>
+  <h1>Pizza Choice</h1>
+   
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Pizza Choice</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Select your choice" id="myInput" onkeyup="filterFunction()">
+      <a href="index.html">All</a>
+      <a href="small.html">Small pizza</a>
+      <a href="medium.html">Medium pizza</a>
+      <a href="large.html">Large pizza</a>
     </div>
-    <br>
-    <br>
-    <br>
+  </div>
 
-    
+<div class="shopping-cart">
 
-    <section class="section featured">
-        <div class="title">
-          <h1>Cusomer's menu</h1>
-        </div>
-  
-        <div class="product-center container">
-          <div class="product">
-            <div class="product-header">
-              <img src="img 2.jpg" alt="">
-              <ul class="icons">
-                <span><i class="bx bx-heart"></i></span>
-                <span><i class="bx bx-shopping-bag"></i></span>
-                <span><i class="bx bx-search"></i></span>
-              </ul>
-            </div>
-            <div class="product-footer">
-              <a href="#">
-                <h3>Large-pizza</h3>
-              </a>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bx-star"></i>
-              </div>
-              <h4 class="price">Ksh 1050</h4>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-header">
-              <img src="img 3.jpg" alt="">
-              <ul class="icons">
-                <span><i class="bx bx-heart"></i></span>
-                <span><i class="bx bx-shopping-bag"></i></span>
-                <span><i class="bx bx-search"></i></span>
-              </ul>
-            </div>
-            <div class="product-footer">
-              <a href="#"><h3>Pizza-Medium</h3></a>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bx-star"></i>
-              </div>
-              <h4 class="price">Ksh 950</h4>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-header">
-              <img src="img 4.jpg" alt="">
-              <ul class="icons">
-                <span><i class="bx bx-heart"></i></span>
-                <span><i class="bx bx-shopping-bag"></i></span>
-                <span><i class="bx bx-search"></i></span>
-              </ul>
-            </div>
-            <div class="product-footer">
-              <a href="#"><h3>Pizza-Small</h3></a>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bx-star"></i>
-              </div>
-              <h4 class="price">Ksh750</h4>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product-header">
-              <img src="img 5.jpg" alt="">
-  
-              <ul class="icons">
-                <span><i class="bx bx-heart"></i></span>
-                <span><i class="bx bx-shopping-bag"></i></span>
-                <span><i class="bx bx-search"></i></span>
-              </ul>
-            </div>
-            <div class="product-footer">
-              <a href="#"><h3>New year's offer</h3></a>
-              <div class="rating">
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bxs-star"></i>
-                <i class="bx bx-star"></i>
-              </div>
-              <h4 class="price">Ksh550</h4>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="product-banner">
-          <div class="left">
-            <img src="img 6.jpg" width="500" height="500" alt="" /> 
-          </div>
-          <div class="right">
-            <div class="content">
-              <h2><span class="discount">70% </span> CUT OFF</h2>
-              <h1>
-                <span>Collect Your</span>
-                <span>Pizza today</span>
-              </h1>
-              <a class="btn" href="#">shop now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <br>
-      <br>
-      <br>
-
-<div class="container">
-        <div class="row">
-            <div class="col-md-5">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img 7.jpg" class="d-block w-300" alt="img 7.jpg">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img 10.jpg" class="d-block w-300" alt="img 8.jpg">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img 9.jpg" class="d-block w-300" alt="img 9.jpg">
-                      </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </a>
-                  </div>
-            </div>
-            <div class="col-md-7">
-                
-            </div>
-        </div>
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 1.jpg" width="200" height="200">
     </div>
-    
-    <div class="container2">
-      <div class="image9">
-        <img src="img 11.jpg" width="300" height="300" alt="pizza">
-        <h3>crispy medium pizza</h3>
-        <h3>Ksh 1000</h3>
-        <a class="add-cart cart 1" href="#"> Add cart </a>
-      </div>
-      <div class="image9">
-        <img src="img 12.jpg" width="300" height="300" alt="pizza">
-        <h3>crispy large pizza</h3>
-        <h3>Ksh 1500</h3>
-        <a class="add-cart cart 2" href="#">Add cart</a>
-      </div>
-      <div class="image9">
-        <img src="img 13.jpg" width="300" height="300" alt="pizza">
-        <h3>crispy small pizza</h3>
-        <h3>Ksh 900</h3>
-        <a class="add-cart cart 3" href="#">Add cart</a>
-      </div>
-      <div class="image9">
-        <img src="img 14.jpg" width="300" height="300" alt="pizza">
-        <h3>stuffed large pizza</h3>
-        <h3>Ksh 1500</h3>
-        <a class="add-cart cart 4" href="#">Add cart</a>
-      </div>
-      <div class="image9">
-        <img src="img 15.jpg" width="300" height="300" alt="pizza">
-        <h3>stuffed medium pizza</h3>
-        <h3>Ksh 1300</h3>
-        <a class="add-cart cart 5" href="#">Add cart</a>
-      </div>
-      <div class="image9">
-        <img src="img 16.jpg" width="300" height="300" alt="pizza">
-        <h3>stuffed small pizza</h3>
-        <h3>Ksh 800</h3>
-        <a class="add-cart cart 5" href="#">Add cart</a>
-      </div>
-      <div class="image9">
-        <img src="img 17.jpg" width="300" height="300" alt="pizza">
-        <h3>Glutten-free small pizza</h3>
-        <h3>Ksh 800</h3>
-        <a class="add-cart cart 6" href="#">Add cart</a>
-      </div>
-      <div class="image9">
-        <img src="img 18.jpg" width="300" height="300" alt="pizza">
-        <h3>Glutten-free medium pizza</h3>
-        <h3>Ksh 900</h3>
-        <a class="add-cart cart 7" href="#">Add cart</a>
-      </div>
-      <div class="image9">
-        <img src="img 19.jpg" width="300" height="300" alt="pizza">
-        <h3>Glutten-free large pizza</h3>
-        <h3>Ksh 800</h3>
-        <a class="add-cart cart 8" href="#">Add cart</a>
-      </div>
-
-
-
-
-
-
-
-
-
-
+    <div class="product-details">
+      <div class="product-title">Large crispy pizza </div>
+      <p class="product-description">Large</p>
     </div>
+    <div class="product-price"> 900</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">Ksh 1050</div>
+  </div>
 
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 6.jpg" width="200" height="200">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Large Glutten-free pizza </div>
+      <p class="product-description">Large</p>
+    </div>
+    <div class="product-price"> 900</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">Ksh 1050</div>
+  </div>
 
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 4.jpg" width="200" height="200">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Large stuffed pizza </div>
+      <p class="product-description">Large</p>
+    </div>
+    <div class="product-price"> 900</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">Ksh 1050</div>
+  </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" 
-integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
-    <script src="./jquery-3.5.1.js"></script>
-    <script src="scripts.js"></script>
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 2.jpg" width="200" height="200">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Large topping Pizza</div>
+      <p class="product-description">Medium pizza</p>
+    </div>
+    <div class="product-price">450</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">500</div>
+  </div>
 
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+<script src="./jquery-3.5.1.js"></script>
+<script src="./scripts.js"></script>
 </body>
 </html>
+
+
+
