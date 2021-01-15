@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Choice </title>
+  <script src="./scripts.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <h1>Pizza Choice</h1>
+   
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Pizza Choice</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Select your choice" id="myInput" onkeyup="filterFunction()">
+      <a href="index.html">All</a>
+      <a href="small.html">Small pizza</a>
+      <a href="medium.html">Medium pizza</a>
+      <a href="large.html">Large pizza</a>
+    </div>
+  </div>
+
+<div class="shopping-cart">
+
+
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 1.jpg" width="200" height="200">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Large crispy pizza </div>
+      <p class="product-description">Large</p>
+    </div>
+    <div class="product-price"> 900</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">Ksh 1050</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 6.jpg" width="200" height="200">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Large Glutten-free pizza </div>
+      <p class="product-description">Large</p>
+    </div>
+    <div class="product-price"> 900</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">Ksh 1050</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 4.jpg" width="200" height="200">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Large stuffed pizza </div>
+      <p class="product-description">Large</p>
+    </div>
+    <div class="product-price"> 900</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">Ksh 1050</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="./img 2.jpg" width="200" height="200">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Large topping Pizza</div>
+      <p class="product-description">Medium pizza</p>
+    </div>
+    <div class="product-price">450</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">500</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+<script src="./jquery-3.5.1.js"></script>
+<script src="./scripts.js"></script>
+</body>
+</html>
+
+
+
+
