@@ -56,16 +56,15 @@ function recalculateCart()
     $('#cart-shipping').html(shipping.toFixed(2));
     $('#cart-total').html(total.toFixed(2));
     if(total == 0){
-      $('.checkout').fadeOut(fadeTime);
+      $('.order').fadeOut(fadeTime);
     }else{
-      $('.checkout').fadeIn(fadeTime);
+      $('.order').fadeIn(fadeTime);
     }
     $('.totals-value').fadeIn(fadeTime);
   });
 }
 
 
-/* Update quantity */
 function updateQuantity(quantityInput)
 {
   /* Calculate line price */
